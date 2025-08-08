@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="WordPress 6.8.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Webinar: High-Availability and Scalability for PostgreSQL - Instaclustr
+    </title>
+
+    <link
+      rel="stylesheet"
+      id="netapp-ic-fonts-css"
+      href="https://www.instaclustr.com/wp-content/themes/instaclustr/css/fonts.css?ver=1.0.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="component-styles-css"
+      href="../../utilities/css/style1.css"
+      type="text/css"
+      media="all"
+    />
+
+
+    
+    <style type="text/css" id="wp-custom-css">
+      body.single.single-post .post-content img {
+        height: auto !important;
+      }
+
+      footer.component.component-footer-2024
+        .footer-menu
+        ul.ic-footer-nav
+        > li:nth-child(3)
+        > ul.dropdown-menu {
+        max-height: 350px;
+      }
+
+      .contact-form-hold .btn-blue-gradient {
+        display: block;
+        margin: 2rem auto;
+        max-width: 80%;
+      }
+      input#searchsubmit {
+        margin-top: 7px;
+      }
+
+      .display-none {
+        display: none;
+      }
+      html {
+        scroll-padding-top: 150px;
+        scroll-behavior: smooth;
+      }
+      @media (max-width: 1024px) {
+        html {
+          scroll-padding-top: 85px;
+        }
+      }
+      .sticky-section h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      /* Lifecycle page table styling */
+      /* https://www.instaclustr.com/support/documentation/useful-information/lifecycle-status-of-application-versions/ */
+      .postid-12178 th {
+        font-weight: bold;
+      }
+      .postid-12178 th:first-of-type {
+        background-color: rgba(0, 152, 228, 0.2);
+      }
+      .postid-12178 tr td:first-of-type:nth-last-of-type(4) {
+        background-color: #eaf4fd;
+      }
+      .postid-12178 tr + tr td:first-of-type:nth-last-of-type(4)[rowspan] {
+        border-top: 1px solid #eaf4fd;
+      }
+      .postid-12178 td p span {
+        font-size: 16px;
+      }
+      .postid-12178 td hr {
+        margin: 3px;
+      }
+      .postid-12178 td span + p:has(+ hr) {
+        display: none;
+      }
+    </style>
+
+   
+  </head>
+
+  <body
+    class="wp-singular event-template-default single single-event postid-12813 wp-theme-instaclustr"
+  >
+
+
+
+
+ <main style="margin:0; padding:0;">
+      <section
+        id="resourceHero"
+        class="component component-free-content-2024 background-color-ntap-darkpurple background-image pt-50"
+        style="
+          background-image: url('https://www.instaclustr.com/wp-content/uploads/resource-single-background-scaled.webp');
+        "
+      >
+        <div class="container-fluid p-0">
+          <div class="row p-0 text-center d-flex align-items-center">
+            <div class="col-12 text-light px-0">
+              <div
+                class="categories card-categories d-flex justify-content-center mb-3"
+              >
+                <span class="category-pill background-color-ntap-pink">
+                  <!--<a href=""></a>-->
+                  <span class="">Watch Now</span>
+                </span>
+              </div>
+              <h1
+                class="ntap-style hero-regular color-ntap-white h2 w-100 w-md-75 m-auto pt-3 pt-md-5"
+              >
+                Configura tu cuenta
+              </h1>
+              <div
+                class="byline d-flex justify-content-center pt-4 pt-md-5 pb-3 pb-md-0"
+              >
+                <p class="mb-0">January 07, 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section
+        class="component component-free-content-two-column-2024 background-color-ntap-gray curve curve-top-left-corner overlay-ntap-gray pb-25"
+      >
+        <div class="container-fluid p-0">
+          <div class="row px-0 text-left">
+            <div class="post-content col-12 col-md-6 pr-0 pr-md-5">
+              <div class="zm-col zm-col-6" data-v-d509169a="">
+                <strong>Description</strong>
+              </div>
+              <p>
+                Businesses are grappling with an influx of transactions in the
+                realm of 24/7/365 operations, necessitating databases that
+                underpin applications capable of supporting high-availability
+                and scalability. While Kubernetes has proven effective for
+                stateless applications, the question arises: what about
+                databases, particularly transactional databases?
+              </p>
+              <p>
+                Enter PostgreSQL, an open-source object-relational database that
+                stands as one of the oldest and most extensively utilized. Its
+                remarkable extensibility has enabled both the community and
+                corporations to enhance PostgreSQL with features such as
+                replication, multi-node scaling, fail-over, and more. At
+                Instaclustr, we implement a multi-node Postgres configuration
+                for all production environments, meticulously configured for
+                workload distribution (read/writes partitioned) and
+                high-availability, leveraging 100% open-source software.
+              </p>
+              <p>
+                From effortless deployment to automated maintenance, our managed
+                service is poised to demonstrate how it empowers your team,
+                allowing them to concentrate on innovation while ensuring
+                optimal performance and reliability. Join us as we unveil a new
+                paradigm of simplicity and efficiency in managing your
+                PostgreSQL databases, designed to enhance your overall
+                experience and drive business success. Discover how Instaclustr
+                enables PostgreSQL databases for high-availability and
+                scalability, ushering in a new era of database management.
+              </p>
+              <p><strong>In this webinar you will learn:</strong></p>
+              <ul>
+                <li>Setting up a multi-node PostgreSQL database &#8211;</li>
+                <li>Demonstrate a fail-over</li>
+                <li>Scaling the node size</li>
+              </ul>
+              <p><strong>Who should attend:</strong></p>
+              <ul>
+                <li>Anyone interested in using the PostgreSQL database.</li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 order-first order-md-last pb-4 mb-5 mb-md-0"
+            >
+              <h3 class="ntap-style hero-italic text-center mb-4">Watch now</h3>
+                <video width="640" height="360" controls>
+                    <source src="https://videos.pexels.com/video-files/2516160/2516160-hd_1920_1080_24fps.mp4" type="video/mp4" />
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <style>
+                    .mi-video {
+                    max-width: 400px;       /* ocupa el 100% del contenedor */
+                    height: auto;      /* mantiene proporción */
+                    border-radius: 8px; /* si quieres bordes redondeados */
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra para mejor look */
+                    }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section
+        class="component component-content-cards-2024 background-color-ntap-gray pb-75 pb-md-125 curve curve-bottom-left-corner overlay-ntap-gray"
+      >
+        <h3 class="ntap-style hero-italic text-center">Related content</h3>
+        <div class="card-deck card-deck-resource three-per-row">
+          <div class="card card-resource text-dark">
+            <a
+              class="card-cover-link"
+              href="https://www.instaclustr.com/events/unmatched-search-analytics-and-performance-with-netapp-instaclustr-for-opensearch-3-0/"
+            >
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="card-title pt-0">
+                    Unmatched search, analytics and performance with NetApp
+                    Instaclustr for OpenSearch 3.0
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-text">
+                    The release of OpenSearch 3.0 brings enhancements for
+                    search, analytics, and observability in modern data-driven
+                    businesses. ...
+                  </div>
+                  <div class="card-link type-arrow">
+                    <div class="component-ctas">
+                      <div
+                        class="btn btn-tertiary d-block d-md-none pl-0 mb-0 text-dark"
+                        data-js-link="https://www.instaclustr.com/events/unmatched-search-analytics-and-performance-with-netapp-instaclustr-for-opensearch-3-0/"
+                      >
+                        <span>Read more</span>
+                      </div>
+                      <div
+                        class="btn btn-arrow d-none d-md-flex text-dark"
+                        data-js-link="https://www.instaclustr.com/events/unmatched-search-analytics-and-performance-with-netapp-instaclustr-for-opensearch-3-0/"
+                      >
+                        <div class="circle-arrow-link large-link text-dark">
+                          <svg
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 30 30.02"
+                          >
+                            <path
+                              class="cls-1"
+                              d="M29.19,15.01c0,8.02-6.36,14.51-14.19,14.51S.81,23.03.81,15.01,7.17.5,15,.5s14.19,6.48,14.19,14.51Z"
+                            />
+                            <path
+                              d="M15,30.02C6.9,30.02.31,23.28.31,15.01S6.9,0,15,0s14.69,6.73,14.69,15.01-6.59,15.01-14.69,15.01ZM15,1C7.45,1,1.31,7.28,1.31,15.01s6.14,14.01,13.69,14.01,13.69-6.28,13.69-14.01S22.55,1,15,1Z"
+                            />
+                            <polygon
+                              points="12.8 21.43 12.09 20.72 17.49 15.33 12.09 9.93 12.8 9.23 18.9 15.33 12.8 21.43"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card card-resource text-dark">
+            <a
+              class="card-cover-link"
+              href="https://www.instaclustr.com/events/unlocking-the-power-of-apache-kafka-scaling-with-a-managed-service/"
+            >
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="card-title pt-0">
+                    Unlocking the power of Apache Kafka<span
+                      class="trademark h5"
+                      >®</span
+                    >: Scaling with a managed service
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-text">
+                    Join industry experts for an exclusive webinar designed to
+                    empower IT professionals, data engineers, and tech
+                    decision-makers with...
+                  </div>
+                  <div class="card-link type-arrow">
+                    <div class="component-ctas">
+                      <div
+                        class="btn btn-tertiary d-block d-md-none pl-0 mb-0 text-dark"
+                        data-js-link="https://www.instaclustr.com/events/unlocking-the-power-of-apache-kafka-scaling-with-a-managed-service/"
+                      >
+                        <span>Read more</span>
+                      </div>
+                      <div
+                        class="btn btn-arrow d-none d-md-flex text-dark"
+                        data-js-link="https://www.instaclustr.com/events/unlocking-the-power-of-apache-kafka-scaling-with-a-managed-service/"
+                      >
+                        <div class="circle-arrow-link large-link text-dark">
+                          <svg
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 30 30.02"
+                          >
+                            <path
+                              class="cls-1"
+                              d="M29.19,15.01c0,8.02-6.36,14.51-14.19,14.51S.81,23.03.81,15.01,7.17.5,15,.5s14.19,6.48,14.19,14.51Z"
+                            />
+                            <path
+                              d="M15,30.02C6.9,30.02.31,23.28.31,15.01S6.9,0,15,0s14.69,6.73,14.69,15.01-6.59,15.01-14.69,15.01ZM15,1C7.45,1,1.31,7.28,1.31,15.01s6.14,14.01,13.69,14.01,13.69-6.28,13.69-14.01S22.55,1,15,1Z"
+                            />
+                            <polygon
+                              points="12.8 21.43 12.09 20.72 17.49 15.33 12.09 9.93 12.8 9.23 18.9 15.33 12.8 21.43"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card card-resource text-dark">
+            <a
+              class="card-cover-link"
+              href="https://www.instaclustr.com/events/the-worlds-largest-apache-kafka-and-apache-cassandra-migration/"
+            >
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="card-title pt-0">
+                    Webinar: The world's largest Apache Kafka<span
+                      class="trademark h5"
+                      >®</span
+                    >
+                    and Apache Cassandra<span class="trademark h5">®</span>
+                    migration: Lessons learned and best practices
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-text">
+                    In this webinar, discover the incredible way how NetApp
+                    Instaclustr pulled off a massive Apache Kafka and Apache
+                    Cassandra ...
+                  </div>
+                  <div class="card-link type-arrow">
+                    <div class="component-ctas">
+                      <div
+                        class="btn btn-tertiary d-block d-md-none pl-0 mb-0 text-dark"
+                        data-js-link="https://www.instaclustr.com/events/the-worlds-largest-apache-kafka-and-apache-cassandra-migration/"
+                      >
+                        <span>Read more</span>
+                      </div>
+                      <div
+                        class="btn btn-arrow d-none d-md-flex text-dark"
+                        data-js-link="https://www.instaclustr.com/events/the-worlds-largest-apache-kafka-and-apache-cassandra-migration/"
+                      >
+                        <div class="circle-arrow-link large-link text-dark">
+                          <svg
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 30 30.02"
+                          >
+                            <path
+                              class="cls-1"
+                              d="M29.19,15.01c0,8.02-6.36,14.51-14.19,14.51S.81,23.03.81,15.01,7.17.5,15,.5s14.19,6.48,14.19,14.51Z"
+                            />
+                            <path
+                              d="M15,30.02C6.9,30.02.31,23.28.31,15.01S6.9,0,15,0s14.69,6.73,14.69,15.01-6.59,15.01-14.69,15.01ZM15,1C7.45,1,1.31,7.28,1.31,15.01s6.14,14.01,13.69,14.01,13.69-6.28,13.69-14.01S22.55,1,15,1Z"
+                            />
+                            <polygon
+                              points="12.8 21.43 12.09 20.72 17.49 15.33 12.09 9.93 12.8 9.23 18.9 15.33 12.8 21.43"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="component component-cta-bar-full-2024 background-color-ntap-darkpurple pt-125 pb-125 pb-sm-125 pb-md-125 pb-lg-125 pb-xl-125 curve curve-bottom-right-corner overlay-ntap-darkpurple"
+      >
+        <div class="container-fluid p-0">
+          <div class="row d-flex">
+            <div class="col-12 text-center">
+              <div class="component-content text-light">
+                <h2 class="h1">
+                  Learn about our<br /><span
+                    class="ntap-style hero-italic color-ntap-teal"
+                    >Managed platform</span
+                  >
+                </h2>
+                <p class="w-100 w-md-50" style="margin: 0 auto">
+                  Schedule your 1:1 session with one of our open source experts
+                </p>
+              </div>
+              <div class="d-flex justify-content-center mt-4">
+                <div class="component-ctas">
+                  <a
+                    class="btn btn-primary text-light cta-1"
+                    href="/schedule-a-demo/"
+                    target="_self"
+                  >
+                    <span>Schedule a demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="darkPurpleOverlay1"
+          class="cta-overlay lozad"
+          data-background-image="/wp-content/themes/instaclustr/img/2024/darkpurple-overlay-1.png"
+        ></div>
+        <div
+          id="darkPurpleOverlay2"
+          class="cta-overlay lozad"
+          data-background-image="/wp-content/themes/instaclustr/img/2024/darkpurple-overlay-2.png"
+        ></div>
+        <div
+          id="darkPurpleOverlay3"
+          class="cta-overlay lozad"
+          data-background-image="/wp-content/themes/instaclustr/img/2024/darkpurple-overlay-3.png"
+        ></div>
+      </section>
+    </main>
+
+    <footer class="component"></footer>
+
+    <script type="text/javascript">
+      var home = {
+        url: "https://www.instaclustr.com/events/high-availability-and-scalability-for-postgresql",
+      };
+      var filterAjax = {
+        url: "https://www.instaclustr.com/wp-admin/admin-ajax.php",
+      };
+    </script>
+
+    <script type="speculationrules">
+      {
+        "prefetch": [
+          {
+            "source": "document",
+            "where": {
+              "and": [
+                { "href_matches": "\/*" },
+                {
+                  "not": {
+                    "href_matches": [
+                      "\/wp-*.php",
+                      "\/wp-admin\/*",
+                      "\/wp-content\/uploads\/*",
+                      "\/wp-content\/*",
+                      "\/wp-content\/plugins\/*",
+                      "\/wp-content\/themes\/instaclustr\/*",
+                      "\/*\\?(.+)"
+                    ]
+                  }
+                },
+                { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } },
+                {
+                  "not": { "selector_matches": ".no-prefetch, .no-prefetch a" }
+                }
+              ]
+            },
+            "eagerness": "conservative"
+          }
+        ]
+      }
+    </script>
+    <script
+      type="text/javascript"
+      defer="defer"
+      src="https://www.instaclustr.com/wp-content/themes/instaclustr/assets/build/main.min.js?ver=1.2.2"
+      id="component-scripts-js"
+    ></script>
+
+  </body>
+</html>
